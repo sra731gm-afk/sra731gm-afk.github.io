@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최승우 | Personal Space</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 배경 별빛 캔버스 -->
+  <canvas id="star-canvas"></canvas>
+
+  <main class="container">
+    <!-- 상단 프로필 헤더 -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <div class="avatar">
+          <span class="avatar-emoji">⭐</span>
+        </div>
+      </div>
+      <div class="badge">
+        <span class="sparkle-icon">✨</span> Creator & Gamer
+      </div>
+      <h1 class="nickname">최승우</h1>
+      <p class="tagline">별처럼 빛나는 이야기와 몰입감 넘치는 순간들을 만들어갑니다.</p>
+    </header>
+
+    <!-- 최애 이모지 하이라이트 섹션 -->
+    <section class="favorite-section glass-card">
+      <div class="section-title">
+        <span class="title-icon">🌟</span>
+        <h2>My Favorite Emoji</h2>
+      </div>
+      <div class="fav-emoji-showcase">
+        <div class="large-star-box" id="star-burst-trigger" title="클릭해서 별을 터뜨려보세요!">
+          <span class="star-icon">⭐</span>
+          <span class="star-pulse"></span>
+        </div>
+        <div class="fav-emoji-info">
+          <h3>밤하늘을 비추는 <strong>별 (Star)</strong></h3>
+          <p>
+            어둠 속에서도 길을 안내하고 저마다의 빛을 내는 별처럼, 
+            언제나 반짝이는 영감과 새로운 상상을 마음에 품고 살아갑니다.
+          </p>
+          <div class="star-action-bar">
+            <button id="send-star-btn" class="action-btn">
+              <span>별빛 띄우기 ⭐</span>
+            </button>
+            <span class="star-counter">반짝인 별: <strong id="star-count">0</strong>개</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 취미 섹션 -->
+    <section class="hobbies-section">
+      <div class="section-title center">
+        <span class="title-icon">🎯</span>
+        <h2>What I Love To Do</h2>
+        <p class="subtitle">제가 가장 몰입하고 즐거움을 느끼는 취미들입니다.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- 취미 1: 영상 제작 -->
+        <article class="hobby-card glass-card">
+          <div class="card-icon-wrapper video-theme">
+            <i class="fa-solid fa-clapperboard"></i>
+          </div>
+          <div class="card-tag">CREATIVE</div>
+          <h3>영상 제작</h3>
+          <p class="card-desc">
+            프레임 하나하나에 감정과 리듬을 담아내는 비디오 크리에이팅.
+            다양한 컷 전환, 감각적인 사운드 디자인, 매력적인 색감 보정으로 
+            머릿속 아이디어를 시각적인 이야기로 완성하는 과정을 즐깁니다.
+          </p>
+          <ul class="tag-list">
+            <li>#동영상편집</li>
+            <li>#모션그래픽</li>
+            <li>#스토리텔링</li>
+            <li>#시네마틱</li>
+          </ul>
+        </article>
+
+        <!-- 취미 2: 게임 -->
+        <article class="hobby-card glass-card">
+          <div class="card-icon-wrapper game-theme">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="card-tag">PLAY & EXPERIENCE</div>
+          <h3>게임</h3>
+          <p class="card-desc">
+            정교한 세계관과 매력적인 스토리텔링이 어우러진 가상 세계를 탐험합니다. 
+            순간적인 판단력과 전략을 요하는 플레이뿐만 아니라, 게임 속 그래픽과 
+            인터랙티브 아트가 주는 독창적인 영감을 사랑합니다.
+          </p>
+          <ul class="tag-list">
+            <li>#스토리게임</li>
+            <li>#전략과협동</li>
+            <li>#세계관탐험</li>
+            <li>#즐거운도전</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer glass-card">
+      <p>빛나는 별처럼 오늘도 즐겁고 의미 있는 하루 되세요! ✨</p>
+      <p class="copyright">© 2026 최승우. Crafted with stars & passion.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
